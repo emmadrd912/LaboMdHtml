@@ -5,10 +5,10 @@ import re
 
 
 def convert(md_fichier, html_fichier):
-    input_file = open(md_fichier, "r", encoding="utf-8")
+    input_file = open(md_fichier, "r")
     text = input_file.read()
     html = markdown2.markdown(text)
-    output_file = open(html_fichier, "w", encoding="utf-8")
+    output_file = open(html_fichier, "w")
     output_file.write(html) 
 
 
