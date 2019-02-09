@@ -1,7 +1,6 @@
 import argparse
 import markdown2
 import os
-import re
 
 
 def convert(md_fichier, html_fichier):
