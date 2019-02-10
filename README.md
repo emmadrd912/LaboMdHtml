@@ -2,7 +2,7 @@
 
 ### Utilisation du convertisseur ###
 
-/// LIRE requirements.txt /// Les plus importants sont en italique. ///
+/// LIRE requirements.txt /// Ce nécessaire sont entourés d'une étoile. ///
 
 #### 1 : Copier le labo sur l'ordinateur ####
 
