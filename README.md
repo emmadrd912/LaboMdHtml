@@ -37,12 +37,12 @@
     ```
 
 - Pour l'option -i ou --input : 
-    - Il doit être suivi du fichier .md que l'on convertir en html ou le chemin vers le fichier.
+    - Il doit être suivi du fichier .md que l'on veut convertir en html ou doit être suivi du chemin amenant au fichier.
 
 - Pour l'option -o ou --output : 
     - Si vous avez crée un fichier .html dans le dossier où est placé index.py(le convertisseur) :
-        - l'option -o ou --output doit être suivi du nom du fichier .html ou le chemin vers le fichier.
-    - Si vous n'avez pas crée de fichier html, il suffit après le -o ou --output de mettre le nom du fichier html que vous souhaitez créer suivi de l'extension .html. En lançant la conversion, le fichier .html va se créer tous seul dans le dossier où est placé index.py.
+        - l'option -o ou --output doit être suivi du nom du fichier .html ou doit être suivi du chemin amenant au fichier.
+    - Si vous n'avez pas crée de fichier html, il suffit après le -o ou --output de mettre le nom du fichier html que vous souhaitez créer suivi de l'extension .html. En lançant la conversion, le fichier .html va se créer tous seul dans le dossier où vous êtes placé.
 
 - Pour l'option -a ou --achtung : 
     - Il suffit juste d'écrire -a ou --achtung pour traduire les textes en allemand. 
@@ -53,7 +53,6 @@
 
 ```
 $python index.py -i fichier.md -o fichier.html -a
-Conversion fait avec succès
 ```
 
 - Avec le chemin du fichier :
