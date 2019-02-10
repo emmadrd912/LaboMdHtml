@@ -1,6 +1,8 @@
+#importation des librairies
 import argparse
 import markdown2
 
+#fonction permettant de convertir le .md en .html
 def convert(md_fichier, html_fichier):
     input_file = open(md_fichier, "r", encoding="UTF-8")
     text = input_file.read()
@@ -10,7 +12,7 @@ def convert(md_fichier, html_fichier):
     output_file.close()
     print('Conversion .md en .html fait avec succès')
 
-
+#fonction permettant de convertir le .md en .html version allemande
 def aide_allemands(md_fichier, html_fichier):
     input_file = open(md_fichier, "r",encoding="UTF-8")
     text = input_file.read()
@@ -26,12 +28,14 @@ def aide_allemands(md_fichier, html_fichier):
     avecallemands.close()
     print("Conversion .md en .html version allemande réussite.")
 
+#ajout d'option à l'utilisation du convertisseur
 parser = argparse.ArgumentParser()
 parser.add_argument("-i", '--input',help='Chemin vers le fichier .md')
 parser.add_argument("-o", '--output',help='Chemin vers le fichier .html')
 parser.add_argument("-a", '--achtung',help='Convertir texte pour faciliter les allemands', action="store_true")
 args = parser.parse_args()
 
+#éxecution du convertisseur selon les options choisies
 if args.achtung is True:
     print('Convertisseur .md en .html')
     print("Pour plus de renseignement sur l'utilisation du convertisseur, veuillez lire le README")
