@@ -30,7 +30,7 @@ def aide_allemands(md_fichier, html_fichier):
 parser = argparse.ArgumentParser()
 parser.add_argument("-i", '--input',help='Chemin vers le fichier .md')
 parser.add_argument("-o", '--output',help='Chemin vers le fichier .html')
-parser.add_argument("-a", '--achtung',help='Converti notre texte pour faciliter les allemands', action="store_true")
+parser.add_argument("-a", '--achtung',help='Convertir texte pour faciliter les allemands', action="store_true")
 args = parser.parse_args()
 
 if args.achtung is True:
