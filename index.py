@@ -1,6 +1,5 @@
 import argparse
 import markdown2
-import os
 
 def convert(md_fichier, html_fichier):
     input_file = open(md_fichier, "r", encoding="UTF-8")
