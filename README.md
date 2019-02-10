@@ -33,6 +33,7 @@
                             Chemin vers le fichier .md
     -o OUTPUT, --output OUTPUT
                             Chemin vers le fichier .html
+    -a, --achtung         Converti notre texte pour faciliter les allemands
     ```
 
 - Pour l'option -i ou --input : 
@@ -43,10 +44,13 @@
         - l'option -o ou --output doit être suivi du nom du fichier .html
     - Si vous n'avez pas crée de fichier html, il suffit après le -o ou --output de mettre le nom du fichier html que vous souhaitez créer suivi de l'extension .html. En lançant la conversion, le fichier .html va se créer tous seul dans le dossier où est placé index.py.
 
+- Pour l'option -a ou --achtung : 
+    - Il suffit juste d'écrire -a ou --achtung pour traduire les textes en allemand. 
+
 - Exemple d'utilisation : 
 
 ```
-$python index.py -i fichier.md -o fichier.html
+$python index.py -i fichier.md -o fichier.html -a
 Conversion fait avec succès
 ```
 
