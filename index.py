@@ -21,7 +21,7 @@ def aide_allemands(md_fichier, html_fichier):
     sansallemands = open(html_fichier, "r",encoding="UTF-8")
     text2 = sansallemands.read()
     avecallemands = open(html_fichier, "w",encoding="UTF-8")
-    aide = text2.replace("ss", "z").replace("s", "z").replace("qu", "k").replace("ce", "ze").replace("c", "k").replace("ç", "z").replace("ph", "f").replace("pp", "p").replace("gu", "ch").replace("g", "ch").replace("j", "k").replace("v", "f").replace("s", "")
+    aide = text2.replace("ss", "z").replace("s", "z").replace("qu", "k").replace("ce", "ze").replace("c", "k").replace("ç", "z").replace("ph", "f").replace("pp", "p").replace("gu", "ch").replace("g", "ch").replace("j", "k").replace("v", "f").replace("s", "").replace("mm","m")
     avecallemands.write(aide)
     avecallemands.close()
     print("Conversion .md en .html version allemande réussite.")
