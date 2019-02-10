@@ -33,15 +33,15 @@
                             Chemin vers le fichier .md
     -o OUTPUT, --output OUTPUT
                             Chemin vers le fichier .html
-    -a, --achtung         Converti notre texte pour faciliter les allemands
+    -a, --achtung          Convertir texte pour faciliter les allemands
     ```
 
 - Pour l'option -i ou --input : 
-    - Il doit être suivi du fichier .md que l'on convertir en html.
+    - Il doit être suivi du fichier .md que l'on convertir en html ou le chemin vers le fichier.
 
 - Pour l'option -o ou --output : 
     - Si vous avez crée un fichier .html dans le dossier où est placé index.py(le convertisseur) :
-        - l'option -o ou --output doit être suivi du nom du fichier .html
+        - l'option -o ou --output doit être suivi du nom du fichier .html ou le chemin vers le fichier.
     - Si vous n'avez pas crée de fichier html, il suffit après le -o ou --output de mettre le nom du fichier html que vous souhaitez créer suivi de l'extension .html. En lançant la conversion, le fichier .html va se créer tous seul dans le dossier où est placé index.py.
 
 - Pour l'option -a ou --achtung : 
@@ -49,10 +49,17 @@
 
 - Exemple d'utilisation : 
 
+- Avec nom de fichier :  
+
 ```
 $python index.py -i fichier.md -o fichier.html -a
 Conversion fait avec succès
 ```
 
+- Avec le chemin du fichier :
+
+```
+$python index.py -i ./mondossier/monfichier.md -o ./mondossier/monfichier.html -a
+```
 
 
