@@ -10,4 +10,26 @@
 
 ceci va permettre au allemands de comprendre.
 
-tes test test
+Convertir texte pour faciliter les allemand
+
+*C'est important*
+* et pas ça
+* c'est une liste
+
+- je suis 
+    - tu es 
+        - il est 
+
+https://github.com/emmadrd912/LaboMdHtml
+
+* https://github.com/emmadrd912/LaboMdHtml
+* https://github.com/emmadrd912/LaboMdHtml
+
+
+* emma
+  * emma
+  * emma
+* emma
+  * emma
+* emma
+* emma
