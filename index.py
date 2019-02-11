@@ -2,7 +2,16 @@
 import argparse
 import markdown2
 
-head = "<!DOCTYPE html>\n<html>\n<head>\n\t<meta charset='utf-8'/>\n\t<link rel='stylesheet' type='text/css' href='main.css'/>\n<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>\n<style>body {font-family: 'Roboto', sans-serif;}</style></head>\n<body>\n"
+head = '''
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset='utf-8'/>
+    <link rel='stylesheet' type='text/css' href='main.css'/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto'rel='stylesheet'>
+    <style>body {font-family: 'Roboto', sans-serif;}</style></head>
+    <body>
+    '''
 footer = "</body>\n</html>"
 
 #fonction permettant de convertir le .md en .html
