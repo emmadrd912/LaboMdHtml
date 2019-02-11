@@ -2,13 +2,16 @@
 import argparse
 import markdown2
 
+head = "<!DOCTYPE html>\n<html>\n<head>\n\t<meta charset='utf-8'/>\n\t<link rel='stylesheet' type='text/css' href='main.css'/>\n<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>\n<style>body {font-family: 'Roboto', sans-serif;}</style></head>\n<body>\n"
+footer = "</body>\n</html>"
+
 #fonction permettant de convertir le .md en .html
 def convert(md_fichier, html_fichier):
     input_file = open(md_fichier, "r", encoding="utf-8")
     text = input_file.read()
     html = markdown2.markdown(text)
     output_file = open(html_fichier, "w",encoding="utf-8")
-    output_file.write(html) 
+    output_file.write(head + html + footer) 
     output_file.close()
     print('Conversion .md en .html fait avec succès')
 
@@ -28,6 +31,7 @@ def aide_allemands(md_fichier, html_fichier):
     avecallemands.close()
     print("Conversion .md en .html version allemande réussite.")
 
+#focntion permettant d'ajouter kikoo
 #def kikoo(md_fichier, html_fichier):
 #    input_file = open(md_fichier, "r",encoding="utf-8")
 #    text = input_file.read()
